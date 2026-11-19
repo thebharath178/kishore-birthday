@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171d34"/><stop offset="1" stop-color="#090b13"/></linearGradient><radialGradient id="r"><stop stop-color="#777fb0" stop-opacity=".55"/><stop offset="1" stop-color="#777fb0" stop-opacity="0"/></radialGradient></defs>
+<rect width="900" height="700" fill="url(#g)"/><circle cx="680" cy="190" r="330" fill="url(#r)"/><circle cx="170" cy="590" r="270" fill="url(#r)" opacity=".5"/><path d="M0 520 Q240 400 460 535 T900 470 V700 H0Z" fill="#080a11" opacity=".5"/>
+<g fill="none" stroke="#777fb0" stroke-opacity=".45"><circle cx="450" cy="310" r="150"/><circle cx="450" cy="310" r="185" stroke-dasharray="3 14"/></g>
+<text x="450" y="345" text-anchor="middle" font-size="115" fill="#777fb0" font-family="Georgia,serif">☾</text>
+<text x="450" y="590" text-anchor="middle" fill="#f1f0eb" font-size="28" letter-spacing="8" font-family="Arial,sans-serif">LATE NIGHTS</text>
+<text x="450" y="630" text-anchor="middle" fill="#b6bac5" font-size="17" letter-spacing="2" font-family="Arial,sans-serif">One more story, then sleep</text></svg>

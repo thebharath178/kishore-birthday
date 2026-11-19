@@ -1,0 +1,72 @@
+MASTER AI CODING PROMPT — KISHORE'S BIRTHDAY WEBSITE
+
+Act as a senior full-stack React developer, UI/UX designer, and security-minded Node.js engineer. Build and maintain a complete, polished, responsive birthday website for my best friend Kishore. The birthday is 30 November 2026. The website should feel personal, emotional, playful, cinematic, and memorable — not like a generic template.
+
+TECH STACK — STRICT REQUIREMENTS
+- Frontend: React.js, Vite, HTML, CSS, and vanilla JavaScript.
+- Backend: Node.js and Express.
+- Data storage: a local JSON file on the server (for example data/submissions.json).
+- Do NOT use SQL, MySQL, PostgreSQL, MongoDB, Firebase, Supabase, or any database.
+- Do NOT add database-related packages or database setup steps.
+- Keep frontend and backend in one easy-to-run project.
+
+MAIN EXPERIENCE — FIVE STAGES
+1. Welcome / countdown: a beautiful opening screen addressed to Kishore, with an animated countdown to 30 November 2026.
+2. Memories: a photo gallery for our friendship memories, with attractive transitions and captions. Use replaceable sample images and clearly explain where I should add real photos.
+3. Friendship quiz: ask 15 questions (within the requested 10–20 question range). Each question should have the choices “Me”, “Kishore”, and “Both”. Show progress and make the experience fun. Do not submit until every question is answered. The participant's answers must be saved on the server.
+4. Mini-games: include at least three small, working friendship-themed games (for example a memory matching game, emoji riddle, and quick-fire challenge). Add clear instructions and replay controls.
+5. Final birthday message: finish with a heartfelt birthday message, celebratory animation/confetti, and a polished final screen.
+
+VISUAL DESIGN
+- Use a premium dark/cinematic look with warm gold accents and tasteful gradients.
+- Make it mobile-first and responsive, especially for Android phones.
+- Use smooth page/section transitions, subtle hover effects, animated cards, progress indicators, and celebratory confetti.
+- Include a music toggle with an original generated melody or user-provided audio; never bundle copyrighted songs without permission.
+- Make text readable, buttons easy to tap, and animations smooth without making the page slow.
+
+PRIVATE ADMIN DASHBOARD — IMPORTANT
+- Create a separate admin page at /admin.
+- Protect it with a password stored only in the server's environment variables (.env), never in React frontend code.
+- Use secure server-side sessions and HttpOnly, SameSite cookies.
+- Only an authenticated admin can call the endpoint that reads quiz submissions.
+- Public visitors and Kishore must not be able to view other people's answers or the admin dashboard data.
+- Include login, logout, a submissions list, participant name, submission date/time, and all 15 answers.
+- Never expose submissions.json through the static public web server. Store it outside the public folder.
+
+JSON STORAGE AND VALIDATION
+- Save each submission to data/submissions.json on the backend.
+- Create the data folder/file automatically if missing.
+- Validate participant name, exact question count, and allowed answer values on the server.
+- Use safe, serialized/atomic file writes so simultaneous submissions do not corrupt the JSON file.
+- Return clear success/error messages to the quiz participant.
+- Add basic rate limiting to quiz submission and admin login routes.
+- Add security headers and sensible request-size limits.
+- Explain that the hosting provider must support persistent writable storage; otherwise JSON submissions can be lost when the app is redeployed or its filesystem resets.
+- Keep the JSON data file and .env out of Git using .gitignore.
+
+DEVELOPER EXPERIENCE
+- Provide a complete working folder structure and all required source files.
+- Include .env.example with SESSION_SECRET and ADMIN_PASSWORD only (no database variables).
+- Include clear README instructions for npm install, running Express and Vite locally, opening /admin, and building/deploying.
+- Keep code readable and beginner-friendly. Add comments for important logic.
+- Do not leave fake buttons, placeholder API routes, broken games, or TODO-only implementations.
+- Verify syntax and build where possible. Clearly report anything not actually tested; never claim a test passed unless it was run.
+
+CONTENT AND PERSONALIZATION
+- Use the names “Bharath” (website owner/admin) and “Kishore” (birthday friend) where appropriate.
+- The quiz is for a friendship between Bharath and Kishore. Use warm, funny, friendship-focused wording without inventing private memories. Make sample captions easy for me to edit.
+- Keep the birthday date as 30 November 2026.
+
+FINAL ACCEPTANCE CHECKLIST
+- The site runs with React + Vite and Node.js + Express.
+- No SQL or database is used anywhere.
+- All five stages work on mobile and desktop.
+- Exactly 15 quiz questions are present, with all questions required before submission.
+- Quiz answers persist in the server-side JSON file.
+- The public page cannot read quiz submissions.
+- The /admin page requires the server-side password login.
+- The three mini-games work and can be replayed.
+- The countdown uses 30 November 2026.
+- README and .env.example are complete, and secrets/data are excluded from Git.
+
+Before changing existing code, inspect the project structure and preserve working features. If a requested change conflicts with these requirements, explain the conflict and ask one focused question instead of silently changing the stack.
